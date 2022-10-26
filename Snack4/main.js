@@ -2,15 +2,22 @@
 //Interrompi il ciclo appena il nome è stato trovato.
 
 arr = ['carlo', 'francesco', 'luigi']
-let guest = prompt('inserisci il tuo nome')
 let soldatino = false
 let i = 0
 
-while ( soldatino = true) {
-     if guest == arr[i] {
-        soldatino = true
-        
-     }
+while ( i < arr.length ) {
+   let nome = prompt('inserisci il tuo nome')
+
+   if ( nome == arr[i] ){
+      soldatino = true
+   }
+   i++
+}  
+
+if (nome = true){
+   console.log ('puoi partecipare')
+}  else {
+   console.log ('non puoi partecipare')
 }
 
 
