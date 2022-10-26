@@ -3,12 +3,16 @@ Genera N array,
 ognuno formato da 10 numeri casuali da 1 a 100.
 Ogni volta che ne crei uno, stampalo. */
 
-//fai inserire un numero all'utente, che chiameremo N
+
 let N = parseInt(prompt('inserisci un numero'))
 
-//genera N array
-let x = 0
+let i = 0
 
-while (x < N) {
-
+while (i < N) {
+    let arr = []
+    while (arr.length < 10){
+        arr.push(Math.floor(Math.random() * 100)+1)
+    }
+    console.log(arr)
+    i++
 }
